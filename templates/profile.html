@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>
+  <img src="static/img/avatars/{{ current_user.id }}.jpg" width="128" height="128">
+</p>
+<p>Никнейм: {{ current_user.nickname }}</p>
+<p>Выиграно игр: {{ current_user.game_wins }}</p>
+<p>Почта: {{ current_user.email }}</p>
+{% endblock %}
